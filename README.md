@@ -4,7 +4,7 @@ To detect and investigate impossible travel scenarios—where a user logs in fro
 
 Corporations have policies against working outside of designated geographic regions, account sharing, or use of non-corporate VPNs. The following scenario will be used to detect unusual logon behavior by creating an incident if a user's login patterns are from multiple geographic regions within a given time period.
 ## Investigation #1: Suspicious Logins from Multiple Unique Locations
-## KQL Query:
+### KQL Query:
 ```KQL Query
    SigninLogs
    | where TimeGenerated > ago(7day)
