@@ -75,7 +75,7 @@ We used a scheduled query rule in Microsoft Sentinel to surface accounts logging
 - No evidence of account compromise or lateral movement
 
 ## Action taken:
-- No suspicious behavior detected from **Azure Activity Logs**
+- No suspicious behavior detected from **AzureActivity Logs**
 ```kql
    AzureActivity
 | where tostring(parse_json(Claims)["http://schemas.microsoft.com/identity/claims/objectidentifier"]) == "AzureADObjectID"
